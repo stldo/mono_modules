@@ -31,6 +31,8 @@ Initialize mono_modules on the current repository.
 > Note: this command is intended to be called in the `preinstall` script, inside
 > `package.json`.
 
+#### Example
+
 ```json
 {
   "scripts": {
@@ -53,9 +55,19 @@ committed to the repository. This option is useful if you use submodules from
 private repositories and need to build the app in an unauthenticated server —
 e.g. Netlify, Vercel, etc.
 
+#### Example
+
+```sh
+mono_modules install vercel/next.js packages/next
+```
+
 ### `update`
 
 Update installed submodules to the latest commit version of the repository.
+
+## Compatibility
+
+- GitHub.
 
 ## Caveats
 

@@ -1,0 +1,27 @@
+{
+  "name": "mono_modules",
+  "version": "0.0.1",
+  "description": "Install modules from monorepos and Git subfolders",
+  "repository": "https://github.com/stldo/mono_modules",
+  "keywords": [
+    "monorepo",
+    "module"
+  ],
+  "bin": "index.js",
+  "scripts": {
+    "lint": "eslint --cache --ext js ./",
+    "postversion": "git push && git push --tags"
+  },
+  "dependencies": {
+    "commander": "^8.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-standard": "^17.0.0-0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0"
+  },
+  "author": "stldo (https://github.com/stldo)",
+  "license": "MIT"
+}

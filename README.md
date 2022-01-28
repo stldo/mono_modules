@@ -34,7 +34,7 @@ Initialize mono_modules on the current repository.
 ```json
 {
   "scripts": {
-    "preinstall": "npx mono_modules init"
+    "preinstall": "npx -y mono_modules init"
   }
 }
 ```
